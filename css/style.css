@@ -1,4 +1,89 @@
 
-.body1{
-background-color: bisque;
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Indie+Flower&family=Nunito:wght@300&display=swap');
+
+:root{
+
+--red:#E50914;
+--black:#000000;
+--light-color:#181819;
+--box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+
+}
+
+
+
+*{
+
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+  html{
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll: padding top 5.5em;
+
+}
+
+header{
+position: fixed;
+top:0;
+left: 0;
+right: 0;
+background-color: var(--black);
+padding: 1rem 7%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 10000;
+box-shadow: var(--box-shadow);
+
+}
+
+header .logo{
+
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+
+}
+
+header .logo i{
+
+    color: var(--red);
+    font-size: 44px;
+    font-weight: bolder;
+
+}
+
+header .nav a{
+
+    color: white;
+    border-radius: 12px;
+    padding: 13px 22px;
+    font-size: 24px;
+    font-weight: bolder;
+    
+
+}
+
+header .nav a:hover{
+
+    color: white;
+    border-radius: 12px;
+    padding: 13px 22px;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: #E50914;
+
 }
